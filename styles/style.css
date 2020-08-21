@@ -1,0 +1,438 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F8F8;
+}
+
+
+
+
+/* Navbr */
+nav {
+    background-color: white;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #505050;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #C90303;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+/* Akhir Navbar */
+
+/* Header */
+
+header {
+    display: inline;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-image: url(../assets/image/header.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+/* Akhir Header */
+
+/* Kontent */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #e74c3c;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+h3 {
+    color: #e74c3c;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 20px;
+}
+
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+/* Akhir Kontent */
+
+/* Paket Cuci Sepatu */
+
+.paket-cuci p {
+    text-align: center;
+    font-size: 30px;
+    color: #e74c3c;
+    font-weight: bold;
+    border-bottom: 3px solid #21D19F;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+
+
+
+.cuci-sepatu {
+    display: flex;
+    width: 20%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.kard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    flex-grow: 1;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.kard:hover {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.kontainer {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.box {
+    display: flex;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.judul {
+    color: #C90303;
+    font-family: Heebo;
+    font-weight: 800;
+
+}
+
+.judul p {
+    color: black;
+    font-weight: 400;
+}
+
+/* Akhir paket */
+
+/* service */
+
+.service {
+    text-align: center;
+    font-size: 30px;
+    color: #e74c3c;
+    font-weight: bold;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+
+/* LightBox */
+.column {
+    float: left;
+    width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Akhir Light BOX */
+
+/* service */
+
+
+/* Profile */
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.sosmed {
+    text-align: center;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram {
+    color: #00a2c6;
+    margin-right: 10px;
+    padding-top: 10px;
+
+
+}
+
+.fa-twitter:hover,
+.fa-facebook-f:hover,
+.fa-instagram:hover {
+    color: #C90303;
+}
+
+.fa-map-marker-alt {
+    color: #00a2c6;
+    margin-right: 10px;
+}
+
+.google-maps a {
+    text-decoration: none;
+    color: #00a2c6;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+.google-maps a:hover {
+    color: #21D19F;
+}
+
+/* Akhir Profile */
+
+/* About Sepatu */
+.sepatu p {
+    text-align: center;
+    font-size: 30px;
+    color: #e74c3c;
+    font-weight: bold;
+    font-family: Heebo;
+    font-weight: 800;
+}
+
+.about-sepatu p {
+    text-align: center;
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 22px;
+    color: #505050;
+}
+
+/* akhir About Sepatu */
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Akhir Footer */
